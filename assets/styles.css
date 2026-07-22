@@ -613,3 +613,9 @@ section{padding-block:clamp(64px,8vw,128px)}
 
 /* N-AUTO: "Elektromechanik" (15 liter) nie mieści się w domyślnym mobile clampie - mniejszy font, bez łamania w środku słowa */
 @media(max-width:640px){.ha-claim{font-size:clamp(1.5rem,7vw,2.1rem)}}
+
+/* N-AUTO: logo = ciemny kafel na jasnym pasku; przy 64px wystawał poza nav i nachodził na hero
+   (uwaga Szymona 22.07) - mniejsze, wciąż czytelne (mocny kontrast), lekko zaokrąglone */
+.brand-logo{height:46px;max-width:170px;border-radius:6px}
+.nav.is-stuck .brand-logo{height:40px}
+@media(max-width:680px){.brand-logo{height:36px;max-width:130px}}
